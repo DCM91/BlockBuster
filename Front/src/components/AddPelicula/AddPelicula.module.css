@@ -1,0 +1,29 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap')
+}
+
+.card {
+    width: 35%;
+    margin: 5px auto;
+    border: solid;
+    display: flex;
+    align-items:center;
+    border-radius: 22px;
+    padding: 30px;
+    flex-direction: column;
+    background-color: #fff;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.card:hover {
+    background-color: beige;
+}
+
+input:invalid:required {
+    border: 2px dashed red;
+}
+
+input:valid {
+border: 2px solid black;
+}

@@ -1,0 +1,27 @@
+
+
+.card {
+    height: 30px;
+    width: 40%;
+    margin: 15px auto;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+    
+}
+
+.card:hover {
+    background-color: beige;
+}
+h4{
+    color: chocolate;
+    
+}
