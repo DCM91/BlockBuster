@@ -6,7 +6,7 @@ const Peliculas = (props) => {
   const film = props.item;
 
   return (
-    <Link style={{ color: "black" }} to={`film/${film.id}`}>
+    <Link style={{ color: "black", textDecoration: "none" }} to={`film/${film.id}`}>
       <div className={styles.card}>
         <p>
           {film.name} ({film.year}) &nbsp;&nbsp;
