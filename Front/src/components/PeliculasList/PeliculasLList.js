@@ -18,18 +18,22 @@ const PeliculasList = (props) => {
   }, [reload]);
 
   return (
-    <div>
-      <h1 className={styles.title}>
-        &nbsp;BlockBuster!{" "}
-        <span>
-          <Link style={{ color: "yellowgreen" }} to="/create">
-            +
-          </Link>
-        </span>
-      </h1>
+    <div style={{width: '100%', display: 'flex'}} >
+      <div style={{width: '60%'}}>
+        <h1 className={styles.title}>
+          &nbsp;BlockBuster!{" "}
+          <span>
+            <Link style={{ color: "yellowgreen", textDecoration: "none", paddingLeft: '5rem', fontWeight: 'bold' }} to="/create">
+              + Add One
+            </Link>
+          </span>
+        </h1>
 
-      {peliculas && peliculas.map((elem) => <Peliculas item={elem} />)}
-      <Outlet />
+        {peliculas && peliculas.map((elem) => <Peliculas item={elem} />)}
+      </div>
+      <div style={{width: '90%', paddingTop: '4rem'}}>
+        <Outlet />
+      </div>
     </div>
   );
 };

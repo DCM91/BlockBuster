@@ -22,23 +22,33 @@ function App() {
 */
 
   return (
-    <div>
-      <h1>&nbsp;&nbsp;My Routes</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/Contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/FAQs">FAQs</Link>
-          </li>
-          <li>
-            <Link to="/Anyway">Anyway</Link>
-          </li>
-        </ul>
+    <div style={{width: '100vw'}} >
+      <div style={{width: '100%'}} >
+          <h1 style={{textAlign: 'center'}} > My Blockbuster Routes</h1>
+      </div>
+      <nav style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      width: '96vw',
+      paddingRight: '2rem',
+      paddingLeft: '2rem'
+
+
+    }}  >
+
+          <p>
+            <Link style={{textDecoration: 'none'}} to="/">Home</Link>
+          </p>
+          <p>
+            <Link style={{textDecoration: 'none'}} to="/Contact">Contact</Link>
+          </p>
+          <p>
+            <Link style={{textDecoration: 'none'}} to="/FAQs">FAQs</Link>
+          </p>
+          <p>
+            <Link style={{textDecoration: 'none'}} to="/Anyway">Anyway</Link>
+          </p>
+        
       </nav>
 
       <div className="myrouters">

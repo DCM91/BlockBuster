@@ -1,4 +1,13 @@
-exports.todos = [
+interface Movie{
+  id: number;
+  name: string;
+  year: string;
+  price: number;
+  description: string;
+}
+
+
+export const todos: Movie[] = [
   {
     id: 0,
     name: "El Padrino",
