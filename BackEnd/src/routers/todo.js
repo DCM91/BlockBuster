@@ -1,6 +1,6 @@
 const express = require('express');
 //importamos el fichero con los datos que necesita nuestro Router
-const {todos} = require('../data/index');
+import {todos} from '../data/index';
 const { addDateMiddleware, validateTodo } = require('../Middleware/index');
 /*
 Un Router de express es como un switch case de Javascript. Simplemente redirige las peticiones hacia la ruta correcta, si esta existe.
